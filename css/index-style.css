@@ -1,0 +1,422 @@
+.main__promo-hits {
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.main__promo-slider {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.main__promo-slider::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100px;
+  background-color: #f7e296;
+}
+
+.main__promo-slide {
+  display: none;
+}
+
+.main__promo-slide--active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__slide-img {
+  padding-left: 60px;
+  width: 500px;
+  text-align: center;
+
+}
+
+.main__slide-box {
+  padding-right: 60px;
+  width: 500px;
+}
+
+.main__slide-number {
+  position: absolute;
+  top: -30px;
+  right: 60px;
+  margin: 0;
+  padding: 0;
+  font: 179px/180px Gilroy, "Arial Black", sans-serif;
+  color: #fff;
+}
+
+.main__slide-number::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 400px;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+}
+
+.main__slide-heading {
+  position: relative;
+  z-index: 2;
+  margin: 65px 0 25px 0;
+  padding: 0 110px 0 0;
+}
+
+.main__promo-slide:nth-child(3) .main__slide-heading {
+  padding-right: 0;
+}
+
+.main__slide-info {
+  margin: 0 0 35px 0;
+  padding-right: 20px;
+}
+
+.main__slide-table {
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+.main__slide-table td {
+  padding: 0 60px 10px 0;
+  font-size: 36px;
+}
+
+.main__slide-table th {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.main__slider-btn {
+  position: absolute;
+  top: 295px;
+  right: 85px;
+}
+
+.main__slide-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.main__slide-btn::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border: 3px solid rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.main__slide-btn:hover::before {
+  border-color: rgba(0, 0, 0, .6);
+}
+
+.main__slide-btn--active::before {
+  border-color: #000;
+}
+
+.main__popular {
+  margin-bottom: 70px;
+}
+
+.main__popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main__popular-item {
+  position: relative;
+  width: 160px;
+  padding-top: 190px;
+}
+
+.main__popular-link {
+  font: 18px Gilroy, "Arial Black", sans-serif;
+}
+
+.main__popular-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  transition: all .6s;
+}
+
+.main__popular-link:hover::before {
+  background-color: #f0c52e;
+}
+
+.main__popular-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background: url(../img/popular-sprite.svg) no-repeat;
+}
+
+.main__link-virtual::after {
+  background-position: 0 0;
+}
+
+.main__link-monopod::after {
+  background-position: -160px 0;
+}
+
+.main__link-camera::after {
+  background-position: -320px 0;
+}
+
+.main__link-fitness::after {
+  background-position: -480px 0;
+}
+
+.main__link-watch::after {
+  background-position: -640px 0;
+}
+
+.main__link-quadcopter::after {
+  background-position: -800px 0;
+}
+
+.main__popular-link:active::after {
+  opacity: .3;
+}
+
+.main__services {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.main__services::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  min-height: 300px;
+  z-index: -1;
+  background-color: #e5e5e5;
+}
+
+.main__services-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__services-btns {
+  width: 273px;
+  margin: 0;
+  padding: 80px 0 70px 0;
+  border-right: 7px solid #000000;
+  list-style: none;
+}
+
+.main__btn-service {
+  width: 160px;
+  margin-bottom: 25px;
+  padding: 8px 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.main__btn-service::after {
+  width: 160px;
+}
+
+.main__btn-service--active {
+  color: #f7e184;
+}
+
+.main__btn-service--active::after {
+  top: 0;
+  width: 273px;
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+.main__services-list {
+  position: relative;
+  width: 760px;
+  margin: 0;
+  padding: 70px 0 0 0;
+  list-style: none;
+}
+
+.main__services-item {
+  display: none;
+  padding-right: 320px;
+}
+
+.main__services-item::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 171px;
+  height: 194px;
+  background: url(../img/services-sprite.svg) no-repeat;
+}
+
+.main__services-delivery::after {
+  background-position: 0 0;
+}
+
+.main__services-warranty::after {
+  background-position: -171px 0;
+}
+
+.main__services-credit::after {
+  background-position: -342px 0;
+}
+
+.main__services-item--active {
+  display: block;
+}
+
+.main__services-header {
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.main__services-info {
+  margin: 0;
+  padding: 0;
+}
+
+.main__partners {
+  margin-bottom: 90px;
+}
+
+.main__partners-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main__partners-item {
+  position: relative;
+  width: 260px;
+}
+
+.main__partners-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background: no-repeat;
+  transition: opacity .3s;
+}
+
+.main__partners-dji::after {
+  background-image: url(../img/partners/dji-overlay.png);
+}
+
+.main__partners-sp::after {
+  background-image: url(../img/partners/sp-gadgets-overlay.png);
+}
+
+.main__partners-go::after {
+  background-image: url(../img/partners/go-pro-overlay.png);
+}
+
+.main__partners-vive::after {
+  background-image: url(../img/partners/vive-overlay.png);
+}
+
+.main__partners-link:hover::after {
+  opacity: 0;
+}
+
+.main__case {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.main__aboutUs,
+.main__contacts {
+  position: relative;
+  width: 560px;
+  padding: 50px 0 0 0;
+}
+
+.main__aboutUs::before,
+.main__contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 8px;
+  background: #000;
+}
+
+.main__aboutUs-headline,
+.main__contacts-headline {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.main__aboutUs-info {
+  margin: 0;
+  padding: 20px 85px 20px 0;
+}
+
+.main__aboutUs-list {
+  padding: 50px 0 50px 40px;
+  list-style: none;
+}
+
+.main__aboutUs-item {
+  position: relative;
+  font: 16px/40px Gilroy, "Arial Black", sans-serif;
+}
+
+.main__aboutUs-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  margin-top: -7px;
+  width: 7px;
+  height: 7px;
+  border: 3px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.main__contacts-info {
+  padding-bottom: 40px;
+}
+
+.main__contacts-map {
+  display: inline-block;
+  margin-bottom: 90px;
+}
