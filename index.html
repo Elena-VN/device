@@ -6,6 +6,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic"
       rel="stylesheet"
   >
+  <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;subset=cyrillic"
+      rel="stylesheet"
+  >
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -80,7 +84,7 @@
     <section class="main__promo-hits container">
       <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="main__promo-slider">
-        <li class="main__promo-slide main__promo-slide--active">
+        <li class="main__promo-slide main__slide-one main__promo-slide--active">
           <div class="main__slide-img">
             <img
                 src="img/hits-one.png"
@@ -88,8 +92,8 @@
             >
           </div>
           <div class="main__slide-box">
-            <p class="main__slide-number">01</p>
             <p class="main__headline main__slide-heading" >Делай селфи, как Бен Стиллер! </p>
+            <p class="main__slide-number">01</p>
             <p class="main__slide-info">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="main__btn">Подробнее</a>
@@ -107,7 +111,7 @@
             </table>
           </div>
         </li>
-        <li class="main__promo-slide ">
+        <li class="main__promo-slide main__slide-two">
           <div class="main__slide-img">
             <img
                 src="img/hits-two.png"
@@ -130,7 +134,7 @@
             </table>
           </div>
         </li>
-        <li class="main__promo-slide ">
+        <li class="main__promo-slide main__slide-three">
           <div class="main__slide-img">
             <img
                 src="img/hits-three.png"
@@ -157,13 +161,13 @@
         </li>
       </ul>
       <div class="main__slider-btn">
-        <button type="button" class="main__slide-btn main__slide-btn--active">
+        <button type="button" class="main__slide-btn main__slide-btn-one main__slide-btn--active">
           <span class="visually-hidden">Слайд первый</span>
         </button>
-        <button type="button" class="main__slide-btn">
+        <button type="button" class="main__slide-btn main__slide-btn-two">
           <span class="visually-hidden">Слайд второй</span>
         </button>
-        <button type="button" class="main__slide-btn">
+        <button type="button" class="main__slide-btn main__slide-btn-three">
           <span class="visually-hidden">Слайд третий</span>
         </button>
       </div>
@@ -209,19 +213,19 @@
         <div class="main__services-btns">
           <button
               type="button"
-              class="main__btn main__btn-service main__btn-service--active"
+              class="main__btn main__btn-service main__btn-service-delivery main__btn-service--active"
           >
             Доставка
           </button>
           <button
               type="button"
-              class="main__btn main__btn-service "
+              class="main__btn main__btn-service main__btn-service-warranty"
           >
             Гарантия
           </button>
           <button
               type="button"
-              class="main__btn main__btn-service "
+              class="main__btn main__btn-service main__btn-service-credit"
           >
             Кредит
           </button>
@@ -307,6 +311,69 @@
         </a>
         <a href="#" class="main__btn main__contacts-btn">Напишите нам</a>
       </section>
+      <section class="main__map-popup">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+          <button type="button" class="main__map-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.3338912542094!2d37.5289085850032!3d55.68692663839901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1540463014346"
+              width="960"
+              height="559"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen
+          >
+          </iframe>
+          <img
+              src="img/map-big.png"
+              alt="г. Москва, ул. Строителей, д. 15"
+              class="main__map-img"
+          >
+      </section>
+      <section class="main__contacts-popup">
+        <h2 class="visually-hidden">Форма связи</h2>
+        <button type="button" name="button" class="main__contacts-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form action="" class="main__contacts-form" method="post">
+          <ul class="main__contacts-popup-list">
+            <li class="main__contacts-popup-item">
+              <label for="name-contacts" class="main__contacts-label">Ваше имя:</label>
+              <input
+                  type="text"
+                  name="name-contacts"
+                  id="name-contacts"
+                  placeholder="Имя Фамилия"
+                  class="main__contacts-input"
+              >
+            </li>
+            <li class="main__contacts-popup-item">
+              <label for="email-contacts" class="main__contacts-label">Ваш e-mail:</label>
+              <input
+                  type="email"
+                  name="email-contacts"
+                  id="email-contacts"
+                  placeholder="email@example.com"
+                  class="main__contacts-input"
+              >
+            </li>
+          </ul>
+          <label for="textarea-contacts" class="main__contacts-label">Текст письма:</label>
+          <textarea
+              name="text-contacts"
+              id="textarea-contacts"
+              rows="10"
+              cols="80"
+              placeholder="В свободной форме"
+              class="main__contacts-text"
+          ></textarea>
+          <button type="submit" name="button" class="main__btn main__contacts-submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+      <div class="main__overlay"></div>
     </div>
   </main>
   <footer class="footer">
@@ -369,5 +436,8 @@
       </div>
     </section>
   </footer>
+  <script src="js/servises-index.js"></script>
+  <script src="js/slider-index.js"></script>
+  <script src="js/popup-index.js"></script>
 </body>
 </html>

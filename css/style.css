@@ -48,7 +48,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -25px;
   left: 60px;
-  font: 48px/50px Gilroy, "Arial Black", sans-serif;
+  font: 48px/50px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
   text-transform: uppercase;
   transition: color .4s;
 }
@@ -188,7 +188,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header__site-item > a {
-  font: 18px/24px Gilroy, "Arial Black", sans-serif;
+  font: 18px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
   text-transform: uppercase;
   letter-spacing: .2em;
   transition: all .2s;
@@ -255,14 +255,15 @@ input[type="radio"].visually-hidden {
 }
 
 .main__headline {
-  font: 47px Gilroy, "Arial Black", sans-serif;
+  font: 47px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
 }
 
 .main__btn {
   position: relative;
+  display: inline-block;
   margin: 0;
   padding: 10px 45px;
-  font: 18px/24px Gilroy, "Arial Black", sans-serif;
+  font: 18px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
   text-transform: uppercase;
   letter-spacing: .2em;
   cursor: pointer;
@@ -321,7 +322,7 @@ input[type="radio"].visually-hidden {
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-  font: 48px/50px Gilroy, "Arial Black", sans-serif;
+  font: 48px/50px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
   text-transform: uppercase;
   color: #ffc600;
   cursor: pointer;
@@ -334,8 +335,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__logo:active {
-   color: rgba(255, 198, 0, .3);
- }
+  color: rgba(255, 198, 0, .3);
+}
 
 .footer__adds {
   color: #fff;
@@ -359,7 +360,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__site-link {
-  font: 18px/24px Gilroy, "Arial Black", sans-serif;
+  font: 18px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
   text-transform: uppercase;
   letter-spacing: .2em;
   color: #fff;
@@ -509,19 +510,17 @@ input[type="radio"].visually-hidden {
   bottom: 15px;
   left: 150px;
   width: 170px;
-  font: 20px/24px Gilroy, "Arial Black", sans-serif;
+  font: 20px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
   color: rgba(255, 255, 255, 0);
   transition: all .3s;
   transform: rotate(-25deg);
   transform-origin: right center;
+  z-index: -5;
 }
 
 .footer__htmlacademy-logo:hover::before {
   color: rgba(255, 198, 0, .6);
   width: 170px;
   transform: rotate(0deg);
+  z-index: 1;
 }
-
-
-
-
