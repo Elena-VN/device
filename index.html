@@ -40,14 +40,14 @@
       </div>
       <ul class="header__site-nav">
         <li class="header__site-item header__catalog">
-          <a href="#">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
           <div class="header__catalog-box">
             <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">Виртуальная реальность</a>
               </li>
               <li class="catalog__item">
-                <a href="#">Моноподы для селфи</a>
+                <a href="catalog.html">Моноподы для селфи</a>
               </li>
               <li class="catalog__item">
                 <a href="#">Экшн-камеры</a>
@@ -69,13 +69,13 @@
           </div>
         </li>
         <li class="header__site-item header__delivery">
-          <a href="#">Доставка</a>
+          <a href="#delivery">Доставка</a>
         </li>
         <li class="header__site-item header__warranty">
-          <a href="#">Гарантия</a>
+          <a href="#delivery">Гарантия</a>
         </li>
         <li class="header__site-item header__contacts">
-          <a href="#">Контакты</a>
+          <a href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -230,7 +230,7 @@
             Кредит
           </button>
         </div>
-        <ul class="main__services-list">
+        <ul class="main__services-list" id="delivery">
           <li class="main__services-item main__services-delivery main__services-item--active">
             <p class="main__headline main__services-header">Доставка</p>
             <p class="main__services-info">
@@ -300,7 +300,7 @@
         </ul>
         <a class="main__btn">Подробнее о нас</a>
       </section>
-      <section class="main__contacts">
+      <section class="main__contacts" id="contacts">
         <h2 class="main__headline main__contacts-headline">Контакты</h2>
         <p class="main__contacts-info">
           Вы можете забрать товар сами, заехав в наш офис.
@@ -379,48 +379,11 @@
   <footer class="footer">
     <section class="footer__container container">
       <h2 class="visually-hidden">"Подвал" сайта</h2>
-      <div class="footer__wrapper-left">
-        <a href="#" class="footer__logo">DEVICE</a>
-        <p class="footer__adds">
-          г. Москва, ул. Строителей, 15
-        </p>
-      </div>
-      <div class="footer__wrapper-center">
-        <nav class="footer__nav">
-          <ul class="footer__site-nav">
-            <li class="footer__item-nav">
-              <a href="#" class="footer__site-link">Доставка</a>
-            </li>
-            <li class="footer__item-nav">
-              <a href="#" class="footer__site-link">Гарантия</a>
-            </li>
-            <li class="footer__item-nav">
-              <a href="#" class="footer__site-link">Контакты</a>
-            </li>
-          </ul>
-          <ul class="footer__socio">
-            <li class="footer__socio-item">
-              <a href="#" class="footer__socio-link footer__socio-fb">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="footer__socio-item">
-              <a href="#" class="footer__socio-link footer__socio-in">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="footer__socio-item">
-              <a href="#" class="footer__socio-link footer__socio-tw">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__wrapper-right">
+      <div class="footer__wrapper-start">
+        <a class="footer__logo">DEVICE</a>
         <ul class="footer__user-nav">
-          <li class="footer__user-item">
-            <a href="#" class="footer__user-link footer__user-login">Войти</a>
+          <li class="footer__user-item ">
+            <a href="#" class="footer__user-link footer__user-login">Вход</a>
           </li>
           <li class="footer__user-item">
             <a href="#" class="footer__user-link footer__user-compare">Сравнить</a>
@@ -429,7 +392,42 @@
             <a href="#" class="footer__user-link footer__user-cart">Корзина</a>
           </li>
         </ul>
+      </div>
+      <div class="footer__wrapper-middle">
+        <p class="footer__adds">
+          г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="footer__site-nav">
+          <li class="footer__item-nav">
+            <a href="#delivery" class="footer__site-link">Доставка</a>
+          </li>
+          <li class="footer__item-nav">
+            <a href="#delivery" class="footer__site-link">Гарантия</a>
+          </li>
+          <li class="footer__item-nav">
+            <a href="#contacts" class="footer__site-link">Контакты</a>
+          </li>
+        </ul>
         <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer__wrapper-end">
+        <ul class="footer__socio">
+          <li class="footer__socio-item">
+            <a href="#" class="footer__socio-link footer__socio-fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer__socio-item">
+            <a href="#" class="footer__socio-link footer__socio-in">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="footer__socio-item">
+            <a href="#" class="footer__socio-link footer__socio-tw">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
         <a href="#" class="footer__htmlacademy-logo">
           <span class="visually-hidden">HTML Academy</span>
         </a>

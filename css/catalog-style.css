@@ -1,0 +1,469 @@
+.main__header {
+  padding: 35px 60px;
+}
+
+.main__headline {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font: 47px/48px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
+}
+
+.main__breadcrumbs-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main__breadcrumbs-item {
+  position: relative;
+  padding-right: 40px;
+}
+
+.main__breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  width: 4px;
+  height: 8px;
+  background: url(../img/catalog/arrow-right.svg) no-repeat;
+}
+
+.main__breadcrumbs-item:last-child::after {
+  background: none;
+}
+
+.main__breadcrumbs-link {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.main__breadcrumbs-link:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.main__breadcrumbs-link:active {
+  color: rgba(0, 0, 0, .1);
+}
+
+.main__breadcrumbs-item:last-child .main__breadcrumbs-link {
+  cursor: text;
+}
+
+.main__breadcrumbs-item:last-child .main__breadcrumbs-link:hover,
+.main__breadcrumbs-item:last-child .main__breadcrumbs-link:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.main__catalog-desing {
+  position: relative;
+}
+
+.main__catalog-desing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, .08);
+}
+
+.main__catalog-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main__filters {
+  width: 210px;
+  margin: 0;
+  padding: 0 60px;
+}
+
+.main__filters::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  z-index: -1;
+  width: 100vh ;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .08);
+}
+
+.main__filters::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 350px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .08);
+}
+
+.main__catalog-headline {
+  margin: 0;
+  padding: 23px 0;
+  font: 16px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.main__filters-form {
+  margin-top: 70px;
+}
+
+.main__filter {
+  margin: 0 0 30px 0;
+  padding: 0;
+  border: none;
+}
+
+.main__filter p {
+  margin: 0;
+  padding: 0;
+}
+
+.main__filter-legend {
+  width: 100%;
+  padding: 12px 0 20px 0;
+  font: 18px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
+  border-top: 2px solid #000;
+
+}
+
+.main__coast-range {
+  width: 100%;
+  height: 60px;
+  outline: 1px solid #ccc;
+}
+
+.main__filters-checkbox,
+.main__filters-radio {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.main__filters-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.main__label-checkbox::before,
+.main__label-radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.main__label-checkbox::before {
+  width: 26px;
+  height: 23px;
+  top: 10px;
+  background: url(../img/catalog/checkbox-sprite.svg) no-repeat;
+}
+
+.main__filters-checkbox:checked + .main__label-checkbox::before {
+  background-position: -26px 0;
+}
+
+.main__label-radio::before {
+  top: 7px;
+  width: 25px;
+  height: 25px;
+  background: url(../img/catalog/radio-sprite.svg) no-repeat;
+}
+
+.main__filters-radio:checked + .main__label-radio::before {
+  background-position: -25px 0;
+}
+
+.main__label-checkbox:hover::before,
+.main__label-radio:hover::before{
+  opacity: .6;
+}
+
+.main__filters-checkbox:focus + .main__label-checkbox::before,
+.main__filters-radio:focus + .main__label-radio::before{
+  border:1px solid #4D90FE;
+  border-radius: 3px;
+  box-shadow: 0 0 5px  #4D90FE;
+}
+
+.main__filters-checkbox:disabled + .main__filters-label,
+.main__filters-radio:disabled + .main__label-radio {
+  color: #a6a6a6;
+}
+
+.main__filters-checkbox:disabled + .main__label-checkbox::before,
+.main__filters-radio:disabled + .main__label-radio::before {
+  opacity: .25;
+}
+
+.main__filters-btn {
+  border: none;
+  background: transparent;
+}
+
+.main__catalog {
+  width: 830px;
+}
+
+.main__sorting-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0 0 70px 60px;
+}
+
+.main__sorting-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 45px;
+  list-style: none;
+}
+
+.main__sorting-item {
+  padding-right: 30px;
+}
+
+.main__sorting-link {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .3);
+  transition: all .2s;
+}
+
+.main__sorting-link:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.main__sorting-link:active {
+  color: #000;
+}
+
+.main__sorting-link-active {
+  color: #000;
+}
+
+.main__sort-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 0 auto;
+  padding: 0 10px 0 0;
+  width: 43px;
+  list-style: none;
+}
+
+.main__sort-item {
+  position: relative;
+}
+
+.main__sort-link::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 11px;
+  height: 10px;
+  background: url(../img/catalog/arrow-sort-sprite.svg) no-repeat;
+  opacity: .2;
+  cursor: pointer;
+}
+
+.main__sort-ascending::before {
+  background-position: 0 0;
+}
+
+.main__sort-descending::before {
+  background-position: -11px 0;
+}
+
+.main__sort-link:hover::before {
+  opacity: .4;
+}
+
+.main__sort-link:active::before,
+.main__sort-link-active::before {
+  opacity: 1;
+}
+
+.main__catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.main__catalog-card {
+  position: relative;
+  margin-bottom: 65px;
+  padding-left: 40px;
+  width: 360px;
+}
+
+.main__catalog-img {
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main__catalog-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.main__catalog-name {
+  width: 260px;
+  font: 18px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
+}
+
+.main__catalog-price {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__catalog-action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 360px;
+  height: 225px;
+  margin: 0;
+  padding: 165px 0 0 0 ;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .7);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.main__catalog-action-btn {
+  margin: 0 70px;
+}
+
+.main__catalog-compare {
+  font-size: 13px;
+  color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.main__catalog-compare:hover {
+  color: #000;
+}
+
+.main__catalog-compare:active {
+  color: rgba(0, 0, 0, .2);
+}
+
+.main__catalog-card:hover .main__catalog-action {
+  z-index: 30;
+  opacity: 1;
+}
+
+.main__new-card::before {
+  content: "new";
+  position: absolute;
+  top: 48px;
+  right: 41px;
+  font: 14px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .2);
+}
+
+.main__new-card::after {
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  width: 58px;
+  height: 58px;
+  border: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 50%;
+}
+
+.main__pagination-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 80px 70px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .08);
+  list-style: none;
+}
+
+.main__page-btn {
+  font: 16px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main__pagination-item {
+  margin: 0;
+  padding: 0;
+}
+
+.main__page-back,
+.main__page-next {
+  display: inline-block;
+  padding:  20px 30px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.main__page-back:hover,
+.main__page-next:hover {
+  background-color: rgba(0, 0, 0, .08);
+}
+
+.main__page-back:active,
+.main__page-next:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.main__pages-number {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main__page-number {
+  display: inline-block;
+  color: rgba(0, 0, 0, .3);
+  padding:  20px 14px;
+
+}
+
+.main__page-number-active {
+  color: #000;
+}
+
+.main__page-number:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.main__page-number:active {
+  color: rgba(0, 0, 0, .2);
+}
