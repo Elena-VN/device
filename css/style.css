@@ -637,32 +637,3 @@ input[type="radio"].visually-hidden {
 .footer__htmlacademy-logo:active {
   opacity: .3;
 }
-
-.footer__htmlacademy-logo::before {
-  content: "HTML Academy";
-  position: absolute;
-  bottom: 15px;
-  right: 25px;
-  width: 170px;
-  font: 20px/24px Gilroy, "Roboto Condensed", "Arial Black", sans-serif;
-  color: rgba(255, 255, 255, 0);
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  -webkit-transform: rotate(-25deg);
-  -ms-transform: rotate(-25deg);
-  transform: rotate(-25deg);
-  -webkit-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
-  z-index: -5;
-}
-
-.footer__htmlacademy-logo:hover::before {
-  color: rgba(255, 198, 0, .6);
-  width: 170px;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  z-index: 1;
-}
