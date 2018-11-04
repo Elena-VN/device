@@ -548,6 +548,14 @@ input[type="radio"].visually-hidden {
   color: #fff;
 }
 
+.footer__phone:hover {
+  color: rgba(255, 255, 255, .4);
+}
+
+.footer__phone:active {
+  color: rgba(255, 255, 255, .1);
+}
+
 .footer__wrapper-end {
   position: relative;
   display: -webkit-box;
