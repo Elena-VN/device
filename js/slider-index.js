@@ -1,10 +1,10 @@
-let btnOne = document.querySelector(".main__slide-btn-one");
-let btnTwo = document.querySelector(".main__slide-btn-two");
-let btnThree = document.querySelector(".main__slide-btn-three");
+const btnOne = document.querySelector(".main__slide-btn-one");
+const btnTwo = document.querySelector(".main__slide-btn-two");
+const btnThree = document.querySelector(".main__slide-btn-three");
 
-let slideOne = document.querySelector(".main__slide-one");
-let slideTwo = document.querySelector(".main__slide-two");
-let slideThree = document.querySelector(".main__slide-three");
+const slideOne = document.querySelector(".main__slide-one");
+const slideTwo = document.querySelector(".main__slide-two");
+const slideThree = document.querySelector(".main__slide-three");
 
 btnOne.onclick = function () {
   btnOne.classList.add("main__slide-btn--active");

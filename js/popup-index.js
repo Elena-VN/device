@@ -1,18 +1,18 @@
-let linkMap = document.querySelector(".main__contacts-map");
-let popupMap = document.querySelector(".main__map-popup");
-let closeMap = document.querySelector(".main__map-close");
+const linkMap = document.querySelector(".main__contacts-map");
+const popupMap = document.querySelector(".main__map-popup");
+const closeMap = document.querySelector(".main__map-close");
 
-let linkContacts = document.querySelector(".main__contacts-btn");
-let popupContacts = document.querySelector(".main__contacts-popup");
-let formContacts = popupContacts.querySelector(".main__contacts-form");
-let contactName = formContacts.querySelector("[name = name-contacts]");
-let contactEmail = formContacts.querySelector("[name = email-contacts]");
-let contactText = formContacts.querySelector("[name = text-contacts]");
-let closeContacts = popupContacts.querySelector(".main__contacts-close");
+const linkContacts = document.querySelector(".main__contacts-btn");
+const popupContacts = document.querySelector(".main__contacts-popup");
+const formContacts = popupContacts.querySelector(".main__contacts-form");
+const contactName = formContacts.querySelector("[name = name-contacts]");
+const contactEmail = formContacts.querySelector("[name = email-contacts]");
+const contactText = formContacts.querySelector("[name = text-contacts]");
+const closeContacts = popupContacts.querySelector(".main__contacts-close");
 
-let escKey = 27;
+const escKey = 27;
 
-let overlay = document.querySelector(".main__overlay");
+const overlay = document.querySelector(".main__overlay");
 
 
 linkMap.addEventListener("click", function (evt) {

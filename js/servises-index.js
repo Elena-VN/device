@@ -1,10 +1,10 @@
-let deliveryBtn = document.querySelector(".main__btn-service-delivery");
-let warrantyBtn = document.querySelector(".main__btn-service-warranty");
-let creditBtn = document.querySelector(".main__btn-service-credit");
+const deliveryBtn = document.querySelector(".main__btn-service-delivery");
+const warrantyBtn = document.querySelector(".main__btn-service-warranty");
+const creditBtn = document.querySelector(".main__btn-service-credit");
 
-let deliveryInfo = document.querySelector(".main__services-delivery");
-let warrantyInfo = document.querySelector(".main__services-warranty");
-let creditInfo = document.querySelector(".main__services-credit");
+const deliveryInfo = document.querySelector(".main__services-delivery");
+const warrantyInfo = document.querySelector(".main__services-warranty");
+const creditInfo = document.querySelector(".main__services-credit");
 
 deliveryBtn.onclick = function () {
   deliveryBtn.classList.add("main__btn-service--active");
