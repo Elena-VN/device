@@ -194,6 +194,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header__user-item {
+  position: relative;
   padding: 9px 30px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -210,10 +211,19 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, .3);
 }
 
-.header__login {
-  margin-right: auto;
-  padding-left: 30px;
-  background: url(../img/user.svg) left center no-repeat;
+.header__user-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  background: url(../img/header-user-sprite.svg) left center no-repeat;
+}
+
+.header__login::before {
+  background-position: 0 0;
 }
 
 .header__logout {
@@ -230,13 +240,16 @@ input[type="radio"].visually-hidden {
   transition: all .4s;
 }
 
-.header__compare {
-  background: url(../img/compare.svg) left center no-repeat;
+.header__compare::before {
+  background-position: -13px 0;
 }
 
 .header__cart {
   padding-right: 0;
-  background: url(../img/cart.svg) left center no-repeat;
+}
+
+.header__cart::before {
+  background-position: -26px 0;
 }
 
 .header__site-nav {
@@ -300,11 +313,10 @@ input[type="radio"].visually-hidden {
 }
 
 .header__catalog-box {
-  opacity: 0;
   position: absolute;
-  top: 40px;
+  top: 22px;
   left: -60px;
-  z-index: 5;
+  z-index: -5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,15 +330,22 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1100px;
-  padding: 0 0 35px 60px;
+  padding: 18px 0 35px 60px;
   background-color: #f7e296;
+  opacity: 0;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 
-.header__catalog:hover .header__catalog-box,
-.header__catalog:focus .header__catalog-box {
+.header__catalog-link:hover + .header__catalog-box,
+.header__catalog-link:focus + .header__catalog-box {
+  z-index: 5;
+  opacity: 1;
+}
+
+.header__catalog-box:hover {
+  z-index: 5;
   opacity: 1;
 }
 
@@ -622,8 +641,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__htmlacademy-logo {
-  display: inline-block;
-  width: 27px;
+  width: 29px;
   height: 35px;
   margin: 0 0 0 auto;
   background: url(../img/htmlAcademy-logo.svg) no-repeat;
